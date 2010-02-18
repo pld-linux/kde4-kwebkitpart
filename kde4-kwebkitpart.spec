@@ -70,21 +70,20 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libkdewebkit.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libkdewebkit.so.?
-%attr(755,root,root) %{_libdir}/libwebkitkde.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libwebkitkde.so.?
-%attr(755,root,root) %{_libdir}/kde4/webkitkdepart.so
-%{_datadir}/kde4/services/webkitpart.desktop
-%{_datadir}/apps/webkitpart
-%{_iconsdir}/*/*/*/*.png
+%attr(755,root,root) %{_libdir}/kde4/kwebkitpart.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/kde4/kwebkitpart.so.?
+%attr(755,root,root) %{_libdir}/libkwebkit.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libkwebkit.so.?
+%{_datadir}/apps/kwebkitpart/error.html
+%{_datadir}/apps/kwebkitpart/kwebkitpart.rc
+%{_iconsdir}/hicolor/*x*/apps/webkit.png
+%{_datadir}/kde4/services/kwebkitpart.desktop
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libkdewebkit.so
-%attr(755,root,root) %{_libdir}/libwebkitkde.so
-%{_includedir}/KDE/KdeWebKit
-%{_includedir}/KDE/WebKitPart
-%{_includedir}/kdewebkit
-%{_includedir}/webkitkde
-%{_datadir}/apps/cmake/modules/*.cmake
+%attr(755,root,root) %{_libdir}/kde4/kwebkitpart.so
+%attr(755,root,root) %{_libdir}/libkwebkit.so
+%{_includedir}/KDE/KWebKitPart
+%{_includedir}/kwebkit_export.h
+%{_includedir}/kwebkitpart.h
+%{_datadir}/apps/cmake/modules/FindKWebKitPart.cmake
