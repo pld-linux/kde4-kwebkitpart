@@ -6,7 +6,7 @@
 
 Summary:	kde4-kwebkitpart - QWebkit plugin
 Name:		kde4-kwebkitpart
-Version:	0
+Version:	4.4.0
 Release:	0.%{snap}.1
 License:	GPL v2
 Group:		X11/Libraries
