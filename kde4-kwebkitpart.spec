@@ -75,8 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/kde4/kwebkitpart.so.?
 %attr(755,root,root) %{_libdir}/libkwebkit.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libkwebkit.so.?
-%{_datadir}/apps/kwebkitpart/error.html
-%{_datadir}/apps/kwebkitpart/kwebkitpart.rc
+%{_datadir}/apps/kwebkitpart
 %{_iconsdir}/hicolor/*x*/apps/webkit.png
 %{_datadir}/kde4/services/kwebkitpart.desktop
 
