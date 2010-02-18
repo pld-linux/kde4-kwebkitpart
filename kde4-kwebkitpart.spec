@@ -11,7 +11,7 @@ Release:	0.%{snap}.1
 License:	GPL v2
 Group:		X11/Libraries
 # svn co svn://anonsvn.kde.org/home/kde/trunk/extragear/base/kwebkitpart
-Source0:	%{orgname}-%{snap}.tar.bz2
+Source0:	%{orgname}-%{snap}.tar.gz
 # Source0-md5:	f46c4e8eaeb5751877474790d349fe84
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtSvg-devel >= %{qtver}
