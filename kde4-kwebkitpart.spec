@@ -1,18 +1,18 @@
 
-%define		qtver		4.6.2
-%define		kdever		4.4.4
-%define		snap		1121512
+%define		qtver		4.6.3
+%define		kdever		4.4.5
+%define		snap		1144732
 %define		orgname		kwebkitpart
 
 Summary:	kde4-kwebkitpart - QWebkit plugin
 Name:		kde4-kwebkitpart
-Version:	4.4.4
+Version:	4.4.5
 Release:	0.%{snap}.1
 License:	GPL v2
 Group:		X11/Libraries
 # svn co svn://anonsvn.kde.org/home/kde/trunk/extragear/base/kwebkitpart
 Source0:	%{orgname}-%{snap}.tar.gz
-# Source0-md5:	56769e20036484c0af1e39756005d9d4
+# Source0-md5:	1b6ac5eed28f6f22bf7a00a1800f1486
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtSvg-devel >= %{qtver}
 BuildRequires:	QtUiTools-devel >= %{qtver}
@@ -71,17 +71,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/kde4/kwebkitpart.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/kde4/kwebkitpart.so.?
 %attr(755,root,root) %{_libdir}/libkwebkit.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libkwebkit.so.?
+%attr(755,root,root) %{_libdir}/kde4/kwebkitpart.so
 %{_datadir}/apps/kwebkitpart
 %{_iconsdir}/hicolor/*x*/apps/webkit.png
 %{_datadir}/kde4/services/kwebkitpart.desktop
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/kde4/kwebkitpart.so
 %attr(755,root,root) %{_libdir}/libkwebkit.so
 %{_includedir}/KDE/KWebKitPart
 %{_includedir}/kwebkit_export.h
