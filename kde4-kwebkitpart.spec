@@ -1,18 +1,18 @@
 
 %define		qtver		4.6.3
-%define		kdever		4.4.5
-%define		snap		1144732
+%define		kdever		4.5.0
+%define		snap		1157360
 %define		orgname		kwebkitpart
 
 Summary:	kde4-kwebkitpart - QWebkit plugin
 Name:		kde4-kwebkitpart
-Version:	4.4.5
+Version:	4.5.0
 Release:	0.%{snap}.1
 License:	GPL v2
 Group:		X11/Libraries
 # svn co svn://anonsvn.kde.org/home/kde/trunk/extragear/base/kwebkitpart
 Source0:	%{orgname}-%{snap}.tar.gz
-# Source0-md5:	1b6ac5eed28f6f22bf7a00a1800f1486
+# Source0-md5:	ed41d422a86a894806334e2dc1455dfc
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtSvg-devel >= %{qtver}
 BuildRequires:	QtUiTools-devel >= %{qtver}
