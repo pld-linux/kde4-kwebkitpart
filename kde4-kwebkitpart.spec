@@ -1,6 +1,6 @@
 
-%define		qtver		4.7.0
-%define		kdever		4.5.3
+%define		qtver		4.7.1
+%define		kdever		4.5.5
 %define		snap		1157360
 %define		orgname		kwebkitpart
 
@@ -22,7 +22,7 @@ BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{kdever}
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
-BuildRequires:	rpmbuild(macros) >= 1.293
+BuildRequires:	rpmbuild(macros) >= 1.600
 Obsoletes:	webkitkde
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,12 +48,8 @@ Pliki nagłówkowe dla kwebkitpart.
 %build
 install -d build
 cd build
-%cmake .. \
-	-DCMAKE_BUILD_TYPE=%{!?debug:Release}%{?debug:Debug} \
-	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
-%if "%{_lib}" == "lib64"
-	-DLIB_SUFFIX=64
-%endif
+%cmake \
+	../
 
 %{__make}
 
