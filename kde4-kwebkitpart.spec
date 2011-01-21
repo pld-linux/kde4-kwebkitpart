@@ -1,12 +1,12 @@
 
 %define		qtver		4.7.1
-%define		kdever		4.5.5
+%define		kdever		4.6.0
 %define		snap		1157360
 %define		orgname		kwebkitpart
 
 Summary:	kde4-kwebkitpart - QWebkit plugin
 Name:		kde4-kwebkitpart
-Version:	4.5.5
+Version:	4.6.0
 Release:	0.%{snap}.1
 License:	GPL v2
 Group:		X11/Libraries
