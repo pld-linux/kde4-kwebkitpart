@@ -4,10 +4,11 @@
 %define		snap		20110802
 %define		orgname		kwebkitpart
 
+%define		rel	2
 Summary:	kde4-kwebkitpart - QWebkit plugin
 Name:		kde4-kwebkitpart
 Version:	4.7.1
-Release:	0.%{snap}.1
+Release:	0.%{snap}.%{rel}
 License:	GPL v2
 Group:		X11/Libraries
 # git clone git://anongit.kde.org/kwebkitpart
