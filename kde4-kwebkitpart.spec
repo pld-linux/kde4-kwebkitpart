@@ -59,3 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/kde4/kwebkitpart.so
 %{_iconsdir}/hicolor/*x*/apps/webkit.png
 %{_datadir}/kde4/services/kwebkitpart.desktop
+%{_datadir}/apps/kwebkitpart
