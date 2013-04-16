@@ -14,6 +14,7 @@ Group:		X11/Libraries
 # git clone git://anongit.kde.org/kwebkitpart
 Source0:	%{orgname}-%{snap}.tar.bz2
 # Source0-md5:	b0c8afbeaf30937b551ef8598b316af5
+URL:		https://projects.kde.org/projects/extragear/base/kwebkitpart
 BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	QtSvg-devel >= %{qtver}
 BuildRequires:	QtUiTools-devel >= %{qtver}
