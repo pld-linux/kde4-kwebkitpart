@@ -4,7 +4,7 @@
 %define		snap		20130415
 %define		orgname		kwebkitpart
 
-%define		rel	1
+%define		rel	2
 Summary:	kde4-kwebkitpart - QWebkit plugin
 Name:		kde4-kwebkitpart
 Version:	%{kdever}
